@@ -87,12 +87,6 @@ jobs:
         name: deploymenttemplates
         path: deploymenttemplates
         
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    # - uses: sonarsource/sonarqube-scan-action@master
-    #  env:
-    #    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         
   Deploy:
     name: Deploy to azure web app
