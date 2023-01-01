@@ -5,15 +5,15 @@ on:
       - master
 
 env:
-  AZURE_WEBAPP_NAME: "softwareTestrepo"    # set this to your application's name
+  AZURE_WEBAPP_NAME: "softwareFinal"    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: "Application"      # set this to the path to your web app project, defaults to the repository root
-  PYTHON_VERSION: '3.7'                       # set this to the python version to use
-  RESOURCEGROUPNAME: "softwareTestrepo-rg"
+  PYTHON_VERSION: '3.7.5'                       # set this to the python version to use
+  RESOURCEGROUPNAME: "softwareFinal-rg"
   LOCATION: "South Central US"
-  HOSTINGPLANNAME: "softwareTestrepo-plan"
+  HOSTINGPLANNAME: "softwareFinal-plan"
   APPINSIGHTLOCATION: "South Central US"
+  SONAR_HOST_URL: "http://localhost:9000"
   SKU: "S1 Standard"
-  SONAR_HOST_URL: "http://20.24.73.13"
 
 jobs:
   Build:
